@@ -3,14 +3,19 @@
 
 ## Docker Deployment
 
-1. **Open Terminal**
+1- **Open Terminal**
    >ctrl+alt+t
-2. **Navigate to Dockerfile Location**
-     >cd /path/to/your/dockerfile
-3. **Run Docker Container**
+   
+2-**Clone repo**
+>git clone https://TOKEN@github.com/ArgoFox1/Docker-Kubernetes-LibraryManagementSystem.git
+
+3- **Navigate to Dockerfile Location**
+>cd /path/to/your/dockerfile
+     
+4- **Run Docker Container**
 >docker container run -d -it --name containername -p 5000:5000 emirhanmetin/library-management
 
-4.**Once the Docker container runs successfully, it will provide you with 2 links**
+5-**Once the Docker container runs successfully, it will provide you with 2 links**
 >>http://127.0.0.1:5000
 >>>http://172.17.0.1:5000 (Docker bridge network IP)
 Click these links to access the website.
@@ -19,19 +24,22 @@ Click these links to access the website.
 1-**Open Terminal**
 >ctrl+alt+t
 
-2-**Navigate to Kubernetes Folder**
+2-**Clone repo**
+>git clone https://TOKEN@github.com/ArgoFox1/Docker-Kubernetes-LibraryManagementSystem.git
+
+3-**Navigate to Kubernetes Folder**
 
 >cd /path/to/your/kubernetes/folder
 
-3-**Check Kubernetes Status**
+4-**Check Kubernetes Status**
 
 >minikube status
 
-4-**If Kubernetes is not running, start it with:**
+5-**If Kubernetes is not running, start it with:**
 
 >minikube start
 
-5-**Create Deployment and Service Objects**
+6-**Create Deployment and Service Objects**
 
 >kubectl apply -f deployment_library.yaml 
 && kubectl apply -f library_service.yaml 
@@ -42,7 +50,7 @@ Alternatively, you can run these commands one by one without using and(&&):
 
 >kubectl apply -f library_service.yaml . 
 
-6-**Check Service Object**
+7-**Check Service Object**
 
 >kubectl get service -w
 
@@ -50,7 +58,7 @@ Check Deployment Object
 
 >kubectl get deployment -w
 
-7-**Access the Service**
+8-**Access the Service**
 
 Once everything runs successfully, execute the following command to open the service in your default web browser:
 
