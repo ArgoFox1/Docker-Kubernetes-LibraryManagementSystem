@@ -33,14 +33,14 @@ Click these links to access the website.
 
 5-**Create Deployment and Service Objects**
 
->kubectl apply -f deployment_library.yaml
-| kubectl apply -f library_service.yaml
+>kubectl apply -f deployment_library.yaml 
+&& kubectl apply -f library_service.yaml 
 
-Alternatively, you can run these commands one by one without usin pipe(|):
+Alternatively, you can run these commands one by one without using and(&&):
 
->kubectl apply -f deployment_library.yaml
+>kubectl apply -f deployment_library.yaml .
 
->kubectl apply -f library_service.yaml
+>kubectl apply -f library_service.yaml . 
 
 6-**Check Service Object**
 
